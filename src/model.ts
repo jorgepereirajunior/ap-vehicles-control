@@ -9,4 +9,8 @@ export class Model {
   public static create(model: string) {
     return new Model(model)
   }
+
+  public get getValue(): string {
+    return this.model
+  }
 }
