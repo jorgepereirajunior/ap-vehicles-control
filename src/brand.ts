@@ -9,4 +9,8 @@ export class Brand {
   public static create(brand: string) {
     return new Brand(brand)
   }
+
+  public get getValue(): string {
+    return this.brand
+  }
 }

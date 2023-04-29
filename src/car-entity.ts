@@ -40,4 +40,28 @@ export class Car {
 
     return new Car(brand, model, bodywork, carData.engine, gearType, carData.year, carData.color)
   }
+
+  public updateBrand(newBrand: string) {
+    this.setBrand = newBrand
+  }
+
+  public get getBrand(): string {
+    return this.brand.getValue
+  }
+
+  private set setBrand(value: string) {
+    this.brand = Brand.create(value)
+  }
+
+  public updateModel(newModel: string) {
+    this.setModel = newModel
+  }
+
+  public get getModel(): string {
+    return this.model.getValue
+  }
+
+  private set setModel(value: string) {
+    this.model = Model.create(value)
+  }
 }
