@@ -3,7 +3,7 @@ export class Car {
   public model: string
   public year: string
 
-  private constructor(brand: string, model: string, year: string) {
+  constructor(brand: string, model: string, year: string) {
     this.brand = brand
     this.model = model
     this.year = year
