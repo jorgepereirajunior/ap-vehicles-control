@@ -10,6 +10,6 @@ export class Car {
   }
 
   public static create(brand: string, model: string, year: string) {
-    console.log()
+    return new Car(brand, model, year)
   }
 }
