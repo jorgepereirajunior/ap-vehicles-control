@@ -6,4 +6,10 @@ describe('CAR ENTITY TESTS', () => {
 
     expect(car).toBeInstanceOf(Car)
   })
+
+  test('Should create a car with factory method', () => {
+    const car = Car.create('CarBrand', 'CarModel', '2015')
+
+    expect(car).toBeInstanceOf(Car)
+  })
 })

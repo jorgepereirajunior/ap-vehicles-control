@@ -8,4 +8,8 @@ export class Car {
     this.model = model
     this.year = year
   }
+
+  public static create(brand: string, model: string, year: string) {
+    console.log()
+  }
 }
