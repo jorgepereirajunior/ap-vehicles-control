@@ -1,7 +1,7 @@
-import { Either, left, right } from './shared/either'
-import { InvalidBrandError } from './errors/invalid-brand'
+import { Either, left, right } from '../../../shared/either'
+import { InvalidBrandError } from '../../../errors/invalid-brand'
 export class Brand {
-  brand: string
+  private readonly brand: string
 
   private constructor(brand: string) {
     this.brand = brand
